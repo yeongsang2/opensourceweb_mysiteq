@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+.container {
+    max-width: 640px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 20px;
+}
+ul.ks-cboxtags li{
+  display: inline;
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #e9a1ff;
+    background-color: #e9a1ff;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #e9a1ff;
+}
+  
+</style>
+</head>
+<body>
+    <div class="container">
+        <ul class="ks-cboxtags">
+            <p>대학</p>
+            <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash"><label for="checkboxOne">서울대</label></li>
+            <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy" checked><label for="checkboxTwo">연세대</label></li>
+            <li><input type="checkbox" id="checkboxThree" value="Rarity" checked><label for="checkboxThree">고려대</label></li>
+            <li><input type="checkbox" id="checkboxFour" value="Moondancer"><label for="checkboxFour">충북대</label></li>
+            <li><input type="checkbox" id="checkboxFive" value="Surprise"><label for="checkboxFive">충남대</label></li>
+        </ul>
+        <ul class="ks-cboxtags">
+            <p>단과대</p>
+            <li><input type="checkbox" id="checkboxSix" value="Rainbow Dash"><label for="checkboxSix">경영대</label></li>
+            <li><input type="checkbox" id="checkboxSeven" value="Cotton Candy" checked><label for="checkboxSeven">자연대</label></li>
+            <li><input type="checkbox" id="checkboxEight" value="Rarity" checked><label for="checkboxEight">전정대</label></li>
+            <li><input type="checkbox" id="checkboxNine" value="Moondancer"><label for="checkboxNine">인문대</label></li>
+            <li><input type="checkbox" id="checkboxTen" value="Surprise"><label for="checkboxTen">사회과학대</label></li>
+        </ul>
+    </div>
+    
+    
+</body>
+</html>
